@@ -11,5 +11,5 @@ There is one point we should to pay more attentions <br/>
       }
 ```
 As the code writed ,drag-drap siggle row or more rows is based on category properties <br/>
-IF all of the rows are seem category, we only can drag-drop siggle row <br/>
+IF all of the rows are same category, we only can drag-drop siggle row <br/>
 IF some rows category properties are "A" and some rows category properties are "B",so we think category "B" rows Are belong to category "A" rows,so we can drag-drop more rows <br/>
