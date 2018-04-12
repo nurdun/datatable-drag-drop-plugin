@@ -4,7 +4,6 @@ class TableDragAndDrop{
         this.dataType = '';
         this.data = data;
         this.datatable = table;
-        this.dataLength = this.data.length;
         this.initEvents(selector);
     }
     initEvents(selector){
