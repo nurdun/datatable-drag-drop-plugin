@@ -1,17 +1,13 @@
-# get start
+#### get start
 import drag-drop.js file to your page
 ```javascript
-'createdRow': function (row, data, dataIndex) {
-     $(row).attr('category', data.category);
-         if (data.category == "A") {
-             $(row).attr('draggable', true);
-          }
-      }
+let selector = '#tableId';
+let dragDroppable = new TableDragAndDrop(selector, testData, table);
 ```
 
 
 
-# Drag-drop-datatable
+#### Drag-drop-datatable
 This is drag-drop plugin for datatable <br/>
 We can to drog and drop siggle row or more rows on datatable <br/>
 There is one point we should to pay more attentions <br/>
