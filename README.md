@@ -1,6 +1,25 @@
 #### get start
 import drag-drop.js file to your page
 ```javascript
+let table = $('#tableId').DataTable({
+                'createdRow': function (row, data, dataIndex) {
+                    $(row).attr('category', data.category);
+                    if (data.category == "A") {
+                        $(row).attr('draggable', true);
+                    }
+                },
+                data: testData,
+                serverSide: false,
+                ordering: false,
+                columns: [{
+                    data: 'MONTH',
+                }, {
+                    data: 'TIME',
+                }, {
+                    data: 'TEXT',
+                }]
+            });
+            
 let selector = '#tableId';
 let dragDroppable = new TableDragAndDrop(selector, testData, table);
 ```
